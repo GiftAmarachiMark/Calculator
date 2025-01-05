@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <h1>Calculator</h1>
+
+    <div class="container">
+        <div class="screen">
+            <div data-screen="input"></div>
+            <div data-screen="result"></div>
+        </div>
+        <div class="keyboard">
+            <div class="numbers">
+                <button class=" box">0</button>
+                <button class=" box">1</button>
+                <button class=" box">2</button>
+                <button class=" box">3</button>
+                <button class=" box">4</button>
+                <button class=" box">5</button>
+                <button class=" box">6</button>
+                <button class=" box">7</button>
+                <button class=" box">8</button>
+                <button class=" box">9</button>
+                <button data-operation="clear" class="box">Clear</button>
+                <button data-operation="delete" class="box">Delete</button>
+            </div>
+            <div class="operations">
+                <button data-operation="plus" class="box">+</button>
+                <button data-operation="minus" class="box">-</button>
+                <button data-operation="mult" class="box">*</button>
+                <button data-operation="division" class="box">/</button>
+                
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
