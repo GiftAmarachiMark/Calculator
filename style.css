@@ -9,6 +9,8 @@
 button{
     border: none;
     outline: 1px solid;
+    font-size: 2rem;
+    font-weight: bold;
 }
 body{
     display: flex;
@@ -31,6 +33,7 @@ h1{
 }
 [data-screen="result"]{
     height: 40px;
+    font-size: 1.5rem;
 }
 
 .keyboard{
@@ -50,6 +53,11 @@ h1{
     height: 100px;
     flex-basis: 33.333%;
 }
-.operations{
-    display: flex;
+.child-box{
+    width: 100%;
+    height: 50%;
+}
+[data-operation="clear"],
+[data-operation="delete"]{
+    padding-inline: 4px;
 }

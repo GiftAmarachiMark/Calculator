@@ -6,6 +6,8 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 
+    <script src="./main.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
@@ -16,23 +18,30 @@
 
     <div class="container">
         <div class="screen">
-            <div data-screen="input"></div>
             <div data-screen="result"></div>
+            <div data-screen="input"></div>
         </div>
         <div class="keyboard">
             <div class="numbers">
-                <button class=" box">0</button>
-                <button class=" box">1</button>
-                <button class=" box">2</button>
-                <button class=" box">3</button>
-                <button class=" box">4</button>
-                <button class=" box">5</button>
-                <button class=" box">6</button>
-                <button class=" box">7</button>
-                <button class=" box">8</button>
-                <button class=" box">9</button>
-                <button data-operation="clear" class="box">Clear</button>
-                <button data-operation="delete" class="box">Delete</button>
+                <button class="box" data-number="0">0</button>
+                <button class="box" data-number="1">1</button>
+                <button class="box" data-number="2">2</button>
+                <button class="box" data-number="3">3</button>
+                <button class="box" data-number="4">4</button>
+                <button class="box" data-number="5">5</button>
+                <button class="box" data-number="6">6</button>
+                <button class="box" data-number="7">7</button>
+                <button class="box" data-number="8">8</button>
+                <button class="box" data-number="9">9</button>
+                
+                <div class="box">
+                    <button class="child-box" data-number=".">.</button>
+                    <button class="child-box" data-operation="equals">=</button>
+                </div>
+                <div class="box">
+                    <button data-operation="clear" class="child-box">Clear</button>
+                    <button data-operation="delete" class="child-box">Delete</button>
+                </div>
             </div>
             <div class="operations">
                 <button data-operation="plus" class="box">+</button>
